@@ -1,0 +1,59 @@
+{
+    "version": 1,
+    "disable_existing_loggers": "False",
+    "root": {
+        "level": "INFO",
+        "handlers": [
+            "console"
+        ]
+    },
+    "formatters": {
+        "standard": {
+            "format": "%(asctime)s %(levelname)s %(process)s %(message)s"
+        }
+    },
+    "handlers": {
+        "console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "standard"
+        }
+    },
+    "loggers": {
+        "debug": {
+            "handlers": [
+                "console"
+            ],
+            "level": "DEBUG"
+        },
+        "verbose": {
+            "handlers": [
+                "console"
+            ],
+            "level": "INFO"
+        },
+        "standard": {
+            "handlers": [
+            ],
+            "level": "INFO"
+        },
+        "requests": {
+            "handlers": [
+                "console"
+            ],
+            "level": "ERROR"
+        },
+        "elasticsearch": {
+            "handlers": [
+                "console"
+            ],
+            "level": "ERROR"
+        },
+        "elasticsearch.trace": {
+            "handlers": [
+                "console"
+            ],
+            "level": "ERROR"
+        }
+    }
+}
