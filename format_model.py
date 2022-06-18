@@ -74,6 +74,7 @@ class FormatModel(object):
             # 读取源文件
             yml_str = util.read_file(self.from_file)
             yaml = ruamel.yaml.YAML()
+            yaml.indent(offset=2, mapping=2)
             # 读取数据
             self.data = yaml.load(yml_str)
             # 转换

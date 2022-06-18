@@ -13,6 +13,8 @@ def read_file(file_path: str, mode="r") -> str:
 
 def write_file(file_path: str, data: str, mode="w"):
     # 文件写入
+    file_dir = os.path.dirname(file_path)
+    os.makedirs(file_dir, exist_ok=True)
     with open(file_path, mode, encoding="utf-8") as file:
         file.write(data)
 

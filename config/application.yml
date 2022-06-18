@@ -6,5 +6,5 @@ yml-format:
   # 模块路径(相对于项目根路径)
   yml-model-path: ./yml
   # 使用的模块前缀(可编写多种环境的模块 例如: dev_ , pro_ 然后指定使用那些模块)
-  yml-model-pre: pro_
+  yml-model-pre: example_
 
